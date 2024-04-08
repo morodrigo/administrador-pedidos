@@ -1,0 +1,50 @@
+/* OptionBox.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+/* Aplica la fuente Raleway a la clase card-text */
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.sin-atender {
+    background: linear-gradient(90deg, #EBF4FF 0%, rgba(255, 255, 255, 0.59) 42.18%);
+}
+.en-proceso {
+    background: linear-gradient(90deg, #FFECE8 0%, rgba(255, 255, 255, 0.59) 42.18%);
+}
+.atendidos{
+    background: linear-gradient(90deg, #E2FFEA 0%, rgba(255, 255, 255, 0.59) 42.18%);
+}
+.promos{
+    background: linear-gradient(90deg, #FCE9FF 0%, rgba(255, 255, 255, 0.59) 42.18%);
+}
+.tu-menu{
+    background: linear-gradient(90deg, #FFE8EC 0%, rgba(255, 255, 255, 0.59) 42.18%);
+}
+#listado-opciones .card-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+#listado-opciones .card-text{
+    font-size: 12px;
+    font-weight: 400;
+}
+.notification-badge {
+   
+    transform: translate(50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+#cerrar-sesion{
+    font-size: 14px;
+    color: #FF5757;
+    background: #FF575726;
+}

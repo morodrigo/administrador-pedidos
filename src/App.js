@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importamos Routes
+
+import Menu from "./Menu";
+import OptionBoxes from "./OptionBoxes";
+import ChatView from "./ChatView";
+import SubHeaderView from "./SubHeaderView";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(true); // Cambia a `false` si no hay sesión iniciada
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Menu
+          loggedIn={loggedIn}
+          setLoggedIn={setLoggedIn}
+          title="Cafetería Gust 18"
+        />
+        {/* Utilizamos Routes en lugar de Route */}
+        <Routes>
+          <Route path="/" element={<OptionBoxes />} />
+          <Route path="/chat" element={<ChatView />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

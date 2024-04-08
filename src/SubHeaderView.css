@@ -1,0 +1,22 @@
+/* SubHeaderView.css */
+.sub-header {
+    padding: 10px;
+}
+
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #F6F6F6;
+    color: black;
+}
+
+.badge.active {
+    background-color: #05386b;
+    color: #fff;
+}
+div.badge {
+    min-height: 42px;
+    /* Establece el tamaño mínimo deseado */
+    /* Agrega cualquier otro estilo necesario */
+}

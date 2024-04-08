@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+/* Aplica la fuente Raleway a la clase card-text */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+.header-container .title>h1 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 30.52px;
+}
+.header-container .title>h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+
+
+
+
+.header-container {
+    position: relative;
+    background-color: #05386B;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    /*background-size: cover;*/
+        /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: left;
+    /* Alinea la imagen al centro del contenedor */
+    background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+    background-image: url('fondo-menu.svg');
+}
+
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: white;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Estilos adicionales según necesites */
+
+.menu-circle {
+    background-color: #094581;;
+    /* Color azul oscuro */
+    width: 50px;
+    /* Ajusta el tamaño del círculo según sea necesario */
+    height: 50px;
+    /* Ajusta el tamaño del círculo según sea necesario */
+    border-radius: 50%;
+    /* Crea un círculo estableciendo el radio de borde al 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Menu.css */
+
+.menu-circle {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Ajusta este valor según sea necesario */
+    right: 0;
+    background-color:#EDEDED;;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 140px;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.sub-menu li:hover {
+    background-color: #f0f0f0;
+}
+.sub-menu .cerrar-sesion{
+    color:red;
+    font-size: 16px;
+    font-weight: 700px;
+}
